@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PagesModule } from './pages/pages.module';
+import { CoreModule } from './core/core.module';
+import { APP_CONFIG, APP_CONSTANTS } from './app.config';
 
 @NgModule({
   declarations: [
@@ -10,9 +13,14 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PagesModule,
+    CoreModule
   ],
-  providers: [],
+  providers: [
+    { provide: APP_CONFIG, useValue: APP_CONSTANTS },
+  ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

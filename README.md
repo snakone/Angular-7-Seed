@@ -25,3 +25,50 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+"# Angular-7-Seed"
+
+# Angular 7 Seed
+Starter App with Angular 7
+
+This is all You actually need to start a fresh professional Ionic 4 App, following best practices and scaffolded with the most and useful modules and services including:
+
+# Core Module
+
+CoreModule is a conventional name for an NgModule with providers for the singleton services you load when the application starts. Includes LanguageService and ErrorHandlerService.
+
+# Shared Module
+
+SharedModule is a conventional name for an NgModule with the components, directives, and pipes that you use everywhere in your app.
+
+# Http Service
+
+Get data from any API with the public get() method. Accepts HttpHeader and HttpParams as arguments.
+
+# Translation Service
+
+Translate your App easy way by just creating a json file at 'assets/i18n/' following other languages pathern's.
+
+* Here is how a JSON should lools like
+
+{"home.welcome": "Welcome!"}
+
+* On the HTML you can call this simply
+
+{{'home.welcome' | translate}}, make sure the parameter it's an string
+
+# Error Handler Service
+
+Customize your Error messages with this Service.
+
+# Components Module
+
+Used to combine all shared components within your application such cards, inputs, footers, headers, etc...
+
+# PWA Support
+
+Progressive Web App Support
+
+# Pipes, Interfaces Modules
+
+This modules are prepared so you just need to create your Pipes and Interfaces and you are ready to go.
+
